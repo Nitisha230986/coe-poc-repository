@@ -29,6 +29,16 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>3.8.2</version>
 				<extensions>true</extensions>
+				<configuration>
+   					 <cloudHubDeployment>
+					      <uri>https://anypoint.mulesoft.com</uri>
+					      <muleVersion>4.4.0</muleVersion>
+					      <applicationName>test-mule</applicationName>
+					      <environment>DEV</environment>
+					      <workerType>MICRO</workerType>
+					     
+                                   </cloudHubDeployment>
+                               </configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -68,5 +78,7 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+	<configurations>
+
 
 </project>
