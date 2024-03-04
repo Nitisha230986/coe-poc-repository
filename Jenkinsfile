@@ -1,51 +1,27 @@
 pipeline {
+    agent any
 
-agent any
-
-stages {
-
-stage('Build Application') {
-
-steps {
-
-bat 'mvn clean install'
-
-}
-
-}
-
-stage('Test') {
-
-steps {
-
-echo 'Application in Testing Phase…'
-
-bat 'mvn test'
-
-}
-
-}
-
-stage('Deploy CloudHub') {
-
-environment {
-
-ANYPOINT_CREDENTIALS = credentials('Anypoint.credential')
-
-}
-
-steps {
-
-echo 'Deploying mule project due to the latest code commit…'
-
-echo 'Deploying to the configured environment….'
-
-bat 'mvn package deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
-
-}
-
-}
-
-}
-
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+				git 'https://github.com/Nitisha230986/coe-poc-repository.git'
+        bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+				git 'https://github.com/Nitisha230986/coe-poc-repository.git'
+				bat "mvn -Dmaven.test.failure.ignore=true clean test"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+				git 'https://github.com/Nitisha230986/coe-poc-repository.git'
+				bat "mvn -Dmaven.test.failure.ignore=true clean deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2"
+            }
+        }
+    }
 }
