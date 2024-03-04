@@ -33,9 +33,13 @@
    					 <cloudHubDeployment>
 					      <uri>https://anypoint.mulesoft.com</uri>
 					      <muleVersion>4.4.0</muleVersion>
+						 <username>NitishaCI</username>
+						 <password>Sep@230986</password>
 					      <applicationName>test-mule</applicationName>
 					      <environment>DEV</environment>
 					      <workerType>MICRO</workerType>
+					      <objectStoreV2>true</objectStoreV2>
+						<region>us-west-2</region>
 					     
                                    </cloudHubDeployment>
                                </configuration>
