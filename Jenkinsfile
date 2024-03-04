@@ -4,43 +4,43 @@ agent any
 
 stages {
 
-stage(‘Build Application’) {
+stage('Build Application') {
 
 steps {
 
-bat ‘mvn clean install’
+bat 'mvn clean install'
 
 }
 
 }
 
-stage(‘Test’) {
+stage('Test') {
 
 steps {
 
-echo ‘Application in Testing Phase…’
+echo 'Application in Testing Phase…'
 
-bat ‘mvn test’
-
-}
+bat 'mvn test'
 
 }
 
-stage(‘Deploy CloudHub’) {
+}
+
+stage('Deploy CloudHub') {
 
 environment {
 
-ANYPOINT_CREDENTIALS = credentials(‘Anypoint.credential’)
+ANYPOINT_CREDENTIALS = credentials('Anypoint.credential')
 
 }
 
 steps {
 
-echo ‘Deploying mule project due to the latest code commit…’
+echo 'Deploying mule project due to the latest code commit…'
 
-echo ‘Deploying to the configured environment….’
+echo 'Deploying to the configured environment….'
 
-bat ‘mvn package deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2’
+bat 'mvn package deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'
 
 }
 
