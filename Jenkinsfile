@@ -23,8 +23,7 @@ agent any
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-				git 'https://github.com/Nitisha230986/coe-poc-repository.git'
-				credentialsId : 'GitHub.credential'
+				git 'https://github.com/Nitisha230986/coe-poc-repository.git
 				bat "mvn -Dmaven.test.failure.ignore=true clean deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-east-1"
             }
         }
