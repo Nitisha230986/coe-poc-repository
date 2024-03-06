@@ -39,8 +39,11 @@
 					      <environment>DEV</environment>
 					      <workerType>Micro</workerType>
 					       <workers>1</workers>
-					      <objectStoreV2>true</objectStoreV2>
+					        <objectStoreV2>true</objectStoreV2>
 						<region>us-east-1</region>
+						<connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
+                				<connectedAppClientSecret>a86c4e779664460B9EC67d9638F893e2</connectedAppClientSecret>
+               					 <connectedAppGrantType>client_credentials</connectedAppGrantType>
 					     
                                    </cloudHubDeployment>
                                </configuration>
