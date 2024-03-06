@@ -39,6 +39,7 @@
 					      <environment>DEV</environment>
 					      <workerType>Micro</workerType>
 					       <workers>1</workers>
+						<businessGroup>LnD</businessGroup>
 					        <objectStoreV2>true</objectStoreV2>
 						<region>us-east-1</region>
 						<connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
