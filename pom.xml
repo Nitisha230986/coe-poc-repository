@@ -56,7 +56,13 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
-
+<distributionManagement>
+<repository>
+<id>rtfk.repository</id>
+<name>Class Repository</name>
+<url>https://maven.anypoint.mulesoft.com/api/v1/organizations/8f8e6e12-de89-4e43-b05b-ebfcc75c676b/maven</url>
+</repository>
+</distributionManagement>
 	<repositories>
 		<repository>
 			<id>anypoint-exchange-v3</id>
