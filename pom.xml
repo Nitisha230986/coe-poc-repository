@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>8f8e6e12-de89-4e43-b05b-ebfcc75c676b</groupId>
-	<artifactId>test-mule</artifactId>
+	<artifactId>test-mule-maven-app</artifactId>
 	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
-	<name>test-mule</name>
+	<name>test-mule-maven-app</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
