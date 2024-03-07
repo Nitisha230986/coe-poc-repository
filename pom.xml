@@ -30,10 +30,12 @@
 				<version>3.8.0</version>
 				<extensions>true</extensions>
 				<configuration>
+					<classifier>mule-application</classifier>
    					<cloudhub2Deployment>
 <uri>https://anypoint.mulesoft.com</uri>
 <target>Cloudhub-US-East-2</target>
 <muleVersion>4.4.0</muleVersion>
+<objectStoreV2>true</objectStoreV2>						
 <connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
 <connectedAppClientSecret>a86c4e779664460B9EC67d9638F893e2</connectedAppClientSecret>
 <connectedAppGrantType>client_credentials</connectedAppGrantType>
@@ -44,8 +46,6 @@
 <replicas>2</replicas>
 <vCores>0.1</vCores>
 <properties>
-<!-- If Auto discovery is set in application, following properties 
-								are mandatory -->
 <anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
 <anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 <anypoint.platform.client_id>6357e83974aa42f19f3c690a0e5a92cf</anypoint.platform.client_id>
@@ -55,7 +55,9 @@
 <!-- if the configured API ID cannot be found in API Manager -->
 <!-- <anypoint.platform.gatekeeper>enabled</anypoint.platform.gatekeeper> -->
 </properties>
+						
 </cloudhub2Deployment>
+				
                                </configuration>
 			</plugin>
 		</plugins>
