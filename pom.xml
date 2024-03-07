@@ -39,7 +39,7 @@
 			      <connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
 			      <connectedAppClientSecret>a86c4e779664460B9EC67d9638F893e2</connectedAppClientSecret>
 			      <connectedAppGrantType>client_credentials</connectedAppGrantType>
-			      <applicationName>test-mule</applicationName>
+			      <applicationName>test-mule-maven-app</applicationName>
 			      <environment>DEV</environment>
 			      <region>Cloudhub-US-East-2</region>
 			      <workers>1</workers>
@@ -62,7 +62,7 @@
 <connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
 <connectedAppClientSecret>a86c4e779664460B9EC67d9638F893e2</connectedAppClientSecret>
 <connectedAppGrantType>client_credentials</connectedAppGrantType>
-<applicationName>test-mule</applicationName>
+<applicationName>test-mule-maven-app</applicationName>
 <provider>MC</provider>
 <environment>DEV</environment>
 <businessGroupId>8f8e6e12-de89-4e43-b05b-ebfcc75c676b</businessGroupId>
