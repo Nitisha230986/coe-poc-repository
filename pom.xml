@@ -4,7 +4,7 @@
 
 	<groupId>8f8e6e12-de89-4e43-b05b-ebfcc75c676b</groupId>
 	<artifactId>test-mule-maven-app</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>test-mule-maven-app</name>
