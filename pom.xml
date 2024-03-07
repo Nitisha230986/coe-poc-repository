@@ -31,7 +31,28 @@
 				<extensions>true</extensions>
 				<configuration>
 					<classifier>mule-application</classifier>
-   					<cloudhub2Deployment>
+					
+					
+					<cloudHubDeployment>
+      <uri>https://anypoint.mulesoft.com</uri>
+      <muleVersion>4.4.0</muleVersion>
+<connectedAppClientId>82c378c1a1fe4d7bb3c321226381be17</connectedAppClientId>
+<connectedAppClientSecret>a86c4e779664460B9EC67d9638F893e2</connectedAppClientSecret>
+<connectedAppGrantType>client_credentials</connectedAppGrantType>
+      <applicationName>test-mule</applicationName>
+      <environment>DEV</environment>
+      <region>Cloudhub-US-East-2</region>
+      <workers>1</workers>
+      <workerType>Micro</workerType>
+		<properties>
+		<anypoint.platform.analytics_base_uri>https://analytics-ingest.anypoint.mulesoft.com</anypoint.platform.analytics_base_uri>
+		<anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
+		<anypoint.platform.client_id>6357e83974aa42f19f3c690a0e5a92cf</anypoint.platform.client_id>
+		<anypoint.platform.client_secret>ff1be89aeb4142ecB0D0FB083965A973</anypoint.platform.client_secret>
+		
+		</properties>
+    </cloudHubDeployment>
+   					<!-- <cloudhub2Deployment>
 <uri>https://anypoint.mulesoft.com</uri>
 <target>Cloudhub-US-East-2</target>
 <muleVersion>4.4.0</muleVersion>					
@@ -49,13 +70,13 @@
 <anypoint.platform.base_uri>https://anypoint.mulesoft.com/</anypoint.platform.base_uri>
 <anypoint.platform.client_id>6357e83974aa42f19f3c690a0e5a92cf</anypoint.platform.client_id>
 <anypoint.platform.client_secret>ff1be89aeb4142ecB0D0FB083965A973</anypoint.platform.client_secret>
-<!-- <instanceId>18678688</instanceId> -->
-<!-- to prevent the gatekeeper from blocking this API implementation -->
-<!-- if the configured API ID cannot be found in API Manager -->
-<!-- <anypoint.platform.gatekeeper>enabled</anypoint.platform.gatekeeper> -->
+<instanceId>18678688</instanceId>
+to prevent the gatekeeper from blocking this API implementation
+if the configured API ID cannot be found in API Manager
+<anypoint.platform.gatekeeper>enabled</anypoint.platform.gatekeeper>
 </properties>
 						
-</cloudhub2Deployment>
+</cloudhub2Deployment> -->
 				
                                </configuration>
 			</plugin>
