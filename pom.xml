@@ -41,7 +41,7 @@
 			      <connectedAppGrantType>client_credentials</connectedAppGrantType>
 			      <applicationName>test-mule-maven-app</applicationName>
 			      <environment>DEV</environment>
-			      <region>Cloudhub-US-East-2</region>
+			      <region>us-west-2</region>
 			      <workers>1</workers>
 			      <workerType>Micro</workerType>
 			      <businessGroup>LnD</businessGroup>
