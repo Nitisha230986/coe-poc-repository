@@ -24,7 +24,7 @@ agent any
             steps {
                 echo 'Deploying....'
 				git 'https://github.com/Nitisha230986/coe-poc-repository.git'
-				bat "mvn -Dmaven.test.failure.ignore=true clean deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=Micro -Dworkers=1 -Dregion=us-east-1"
+				bat "mvn -Dmaven.test.failure.ignore=true clean deploy -DmuleDeploy -Dusername=NitishaCI -Dpassword=Sep@230986 -DworkerType=MICRO -Dworkers=1 -Dregion=Cloudhub-US-East-2"
             }
         }
     }
